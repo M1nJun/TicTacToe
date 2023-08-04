@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.tictactoeclient.PrimaryController">
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="playerStatus" text="Label">
+               <padding>
+                  <Insets left="90.0" top="40.0" />
+               </padding>
+            </Label>
+            <Label fx:id="turnStatus" text="Label">
+               <padding>
+                  <Insets left="350.0" top="40.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="button11" mnemonicParsing="false" onAction="#row1col1" text="   ">
+                     <HBox.margin>
+                        <Insets left="160.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="button12" mnemonicParsing="false" onAction="#row1col2" text="   ">
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="button13" mnemonicParsing="false" onAction="#row1col3" text="   ">
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="button21" mnemonicParsing="false" onAction="#row2col1" text="   ">
+                     <HBox.margin>
+                        <Insets left="160.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="button22" mnemonicParsing="false" onAction="#row2col2" text="   ">
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="button23" mnemonicParsing="false" onAction="#row2col3" text="   ">
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="button31" mnemonicParsing="false" onAction="#row3col1" text="   ">
+                     <HBox.margin>
+                        <Insets left="160.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="button32" mnemonicParsing="false" onAction="#row3col2" text="   ">
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="button33" mnemonicParsing="false" onAction="#row3col3" text="   ">
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
